@@ -6,19 +6,11 @@ body {
 select{
   position: absolute;
 }
-.container {
-    width : 300px;
-    height : 100px;
-    vertical-align: middle;
-    font-size: 30px;
-    border : 2px solid burlywood;
-    border-radius: 10px;
+#dropdown {
+  position: relative;
+  z-index: 9999; /* Set a high z-index value */
 }
 
-.usMap {
-    width : 900px;
-    height: 800px;
-}
 #addsCity{
     width : 40px;
     height : 20px;
@@ -83,4 +75,20 @@ select{
   .popup-content p {
     font-size: 10px;
     margin: 0;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .legend-color {
+    width: 20px;
+    height: 10px;
+    margin-right: 5px;
+  }
+  
+  .legend-label {
+    white-space: nowrap;
   }

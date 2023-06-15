@@ -8,21 +8,19 @@
     
 </head>
 <body>
-    <h1> Testing Visualizations</h1>
-    
-    <div class ="container"> 
-        <input id="inputCity", type="text">
-        <button id ="addCity">ADD</button>
-        <div id ="toVisit", class="to-Visit"></div>
-    </div>
+    <h3> Geospatial Visualization</h3>
     <div> <select id="dropdown"> 
-      <option value="option1">SVI</option>
-      <option value="option2">Sea Level</option>
+      <option value="">Choose a data</option>
+      <option value="SVI">SVI</option>
+      <option value="Sea Level">Sea Level</option>
     </select></div>
-  <div id="map"  class="usMap"></div>
+
+
+  <div id="map-container" style="width: 100%; height: 400px;"></div>
 
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet" />
+  <script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
   <script src='https://d3js.org/d3.v7.min.js'></script>
   <script src="main.js"></script>
   
